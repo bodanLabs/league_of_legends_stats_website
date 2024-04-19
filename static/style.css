@@ -1,0 +1,408 @@
+/* static/styles.css */
+.form-group {
+    margin-bottom: 15px;
+    padding: 110px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black !important;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #0b4e2f;
+}
+
+
+
+
+body{
+  margin:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #313131; /* Or any other background color */
+}
+
+
+
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Allows the container to fit the size of the image */
+  border-radius: 30px; /* Adjust as needed */
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.image-container img {
+  display: block; /* Removes bottom space/line */
+  border-radius: 20px; /* Make the image rounded */
+  width: 100%; /* Ensures the image is responsive within the container */
+
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the container */
+  width: 100%; /* Take full width of the container */
+  background: rgba(83, 104, 139, 0.9); /* Semi-transparent black background */
+  color: black; /* Text color */
+  text-align: center; /* Center the text */
+  font-weight: bold;
+  padding: 10px 0; /* Padding top and bottom */
+  box-sizing: border-box; /* Makes sure padding doesn't add to the width */
+}
+
+
+.div-level{
+  height: 20px;
+  margin-top: -11px;
+  text-align: center;
+}
+
+.span-level{
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #11181d;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-data{
+  text-align: center;
+  background-color: #313131 ;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  align-items: center;
+  width: 1100px
+}
+
+
+.text-block {
+  flex:1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.collapsible{
+  background-color: #a2e2ff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+ 
+}
+
+
+.active, .collapsible:hover {
+  background-color: #ffb5b5;
+}
+
+.ranked-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #313131;
+  align-items: center;
+}
+
+
+
+.collapsible_history{
+  background-color: #1db7ff;
+  color: #747474;
+  cursor: pointer;
+  padding: 18px;
+  width: 30%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  margin-bottom: 13px;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+}
+
+
+
+.ranked-match{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #313131;
+  color: #fff;
+  align-items: center;
+}
+
+
+
+
+
+
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #323232; /* Card background color */
+  color: white; /* Text color */
+  font-family: Arial, sans-serif; /* Example font */
+  border-radius: 5px; /* Card border radius */
+  width: 700px; /* Card width */
+  overflow: hidden; /* Ensures contents fit within the border radius */
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.card-header,
+.card-main,
+.card-footer {
+  padding: 10px; /* Padding within sections */
+  display: flex;
+}
+
+.card-header {
+
+  justify-content: space-between; /* Space elements in header */
+}
+
+.card-main {
+  justify-content: space-evenly; /* Space elements in main section */
+}
+
+.card-footer {
+  justify-content: space-between; /* Space elements in footer */
+}
+
+.kda-section,
+.items-section,
+.achievements,
+.wards-section,
+.rank-section {
+  display: flex;
+  align-items: center;
+}
+
+.kda-values {
+  font-size: 0.2; /* Size of KDA values */
+}
+
+.kda-ratio {
+}
+
+/* Example colors for kills, deaths, and assists */
+.kills {
+  color: #2ecc71;
+}
+
+.deaths {
+  color: #e74c3c;
+}
+
+.assists {
+  color: #f39c12;
+}
+
+/* Placeholder for items and achievements sections */
+.items-section,
+.achievements {
+  /* Insert further styling here */
+}
+
+/* Example styles for achievements */
+.achievement {
+  background-color: #3498db;
+  border-radius: 3px;
+  padding: 3px 6px;
+  margin-right: 5px; /* Space between achievements */
+}
+
+/* Placeholder styles for wards and rank sections */
+.wards-section,
+.rank-section {
+  /* Insert further styling here */
+}
+
+
+.champion-image{
+  padding-right: 10px;
+}
+
+.summoner-spells{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 30px !important;
+  z-index: 10;
+  position: relative;
+}
+
+
+
+.button-36 {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+
+.input-text{
+  border-radius: 5px;
+  background: rgb(249, 250, 250);
+  border: 1px solid rgb(120, 192, 255);
+  font-size: 16px;
+  height: 30px;
+  line-height: 24px;
+  padding: 7px 8px;
+  color: rgb(8, 9, 10);
+  box-shadow: none;
+}
+
+:focus{
+  background-color: #fff;
+  border-color: #3b49df;
+  box-shadow: 1px 1px 0 #3b49df;
+}
+
+
+
+
+label {
+
+  font-family: 'Heebo', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #EF2D56;
+  border-radius: 0rem;
+  -webkit-border-radius: 0rem;
+  -moz-border-radius: 0rem;
+  padding: 0.35rem 0.5rem;
+  border-style: none;
+  border-width: 0rem;
+  border-color: #EF2D56;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -box-shadow: none;
+  
+  }
+
+
+
+  /* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px; /* Adjust the width as needed */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Adjust the position as needed */
+  left: 1%;
+  margin-left: -150px; /* Adjust the margin as needed */
+
+  /* Fade in tooltip - optional */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow - optional */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 83%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
