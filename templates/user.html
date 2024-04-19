@@ -1,0 +1,112 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header-data">
+
+            <div class="image-container">
+                <img src= "{{ url_for('static', filename=profile_icon_id_path) }}" alt="Profile Icon" class="center">
+                <div class="div-level">
+                    <span class="span-level">{{ summoner_level }}</span>
+                </div>
+
+            <h1 style='text-align:center;'>{{ summoner_name }}</h1>
+
+            
+
+    </div>
+
+    <div class="container">
+        
+        <button type="button" class="collapsible">SOLO RANKED</button>
+        <div class="ranked-content">
+            <img style="width: 200px;" src= "{{ url_for('static', filename=solo_rank_logo_path) }}" alt="Solo Ranked Logo" class="center">
+            <h1>{{solo_rank_tier}} {{solo_rank}}</h1>
+            <p>{{ solo_league_points }}</p>
+            <h2>{{ solo_wins }}  {{ solo_losses }} </h2>
+        </div>
+        
+        <button type="button" class="collapsible">FLEX RANKED</button>
+        <div class="ranked-content">
+            <img style="width: 200px;" src= "{{ url_for('static', filename=flex_rank_logo_path) }}" alt="Solo Ranked Logo" class="center">
+            <h1>{{flex_rank_tier}} {{flex_rank}}</h1>
+            <p>{{ flex_league_points }}</p>
+            <h2>{{ flex_wins }} {{ flex_losses }}</h2>
+        </div>
+    </div>
+
+    <div class="body-content">
+        <button type="button" class="collapsible">LAST MATCH DATA</button>
+        <div class="ranked-content">
+            <div class="card-container">
+                <div class="card-header" style = "background-color: {{card_color}}">
+                  <div class="game-mode">{{game_mode}}</div>
+                  <div class="time-stats">{{time_from_game}} ago</div>
+                  <div class="victory-stats">{{game_duration}}</div>
+                </div>
+                <div class="card-main">
+                  <div class="kda-section">
+                    <div class="champion-image">
+                        <img style="width: 50px;" src= "{{ url_for('static', filename=champion_played_path) }}" alt="Item 1" class="center">
+                    </div>
+                    <div class="kda-values">
+                        <span class="kills">{{player_kills}}</span> /
+                        <span class="deaths">{{player_deaths}}</span> /
+                        <span class="assists">{{player_assists}}</span><br>
+                        <span class="kda-ratio">{{player_kda}}</span>
+                    </div>
+                    <div class="summoner-spells">
+                    <img style="width: 20px;" src= "{{ url_for('static', filename=summoner_spell_1_path) }}" alt="Summoner Spell 1" class="center">
+                    <img style="width: 20px;" src= "{{ url_for('static', filename=summoner_spell_2_path) }}" alt="Summoner Spell 2" class="center">
+                    <img style="width: 20px; padding-left: 10px" src= "{{ url_for('static', filename=player_rune_path_1) }}" alt="Summoner Spell 2" class="center">
+                    <img style="width: 20px;" src= "{{ url_for('static', filename=player_rune_path_2) }}" alt="Summoner Spell 2" class="center">
+                    </div>
+                  </div>
+                  <div class="items-section">
+                    <div class="tooltip">
+                      <img style="width: 30px;" src= "{{ url_for('static', filename=player_item_1_url) }}" alt="Item 1" class="center">
+                      <span class="tooltiptext">{{item_1_name}}</span>
+                    </div>
+                    <div class="tooltip">
+                      <img style="width: 30px;" src= "{{ url_for('static', filename=player_item_2_url) }}" alt="Item 2" class="center">
+                      <span class="tooltiptext">TODO - Add item name</span>
+                    </div>
+                    <div class="tooltip">
+                      <img style="width: 30px;" src= "{{ url_for('static', filename=player_item_3_url) }}" alt="Item 3" class="center">
+                      <span class="tooltiptext">TODO - Add item name</span>
+                    </div>
+                    <div class="tooltip">
+                      <img style="width: 30px;" src= "{{ url_for('static', filename=player_item_4_url) }}" alt="Item 4" class="center">
+                      <span class="tooltiptext">TODO - Add item name</span>
+                    </div>
+                    <div class="tooltip">
+                      <img style="width: 30px;" src= "{{ url_for('static', filename=player_item_5_url) }}" alt="Item 5" class="center">
+                      <span class="tooltiptext">TODO - Add item name</span>
+                    </div>
+                    <div class="tooltip">
+                      <img style="width: 30px;" src= "{{ url_for('static', filename=player_item_6_url) }}" alt="Item 6" class="center">
+                      <span class="tooltiptext">TODO - Add item name</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer" style="background-color: {{card_color}}">
+                  <div class="wards-section">
+                    <div class="pu-cidere">TODO - KP</div>
+                  </div>
+                  <div class="rank-section">
+                    <div class="rank">TODO - RANK</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/collapsible.js') }}"></script>
+
+</body>
+</html>
