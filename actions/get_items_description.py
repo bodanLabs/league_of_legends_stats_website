@@ -8,7 +8,7 @@ def get_items_data(item_id):
     "Accept-Language": "en-US,en;q=0.9",
     "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
     "Origin": "https://developer.riotgames.com",
-    "X-Riot-Token": "RGAPI-ac7cc32a-168f-4e60-97f8-bc93e826b277"
+    "X-Riot-Token": "riot_token"
 }
     response = requests.get(url, headers=headers)
     data = response.json()
